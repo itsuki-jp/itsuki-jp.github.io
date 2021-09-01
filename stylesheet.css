@@ -1,34 +1,84 @@
-@ charset "UTF-8";
+@charset "UTF-8"
 
-body {
-  font-family: "Avenir Next";
+html{
+  font-size: 100%;
 }
-
-li {
-  list-style: none;
-  float:left;
-  
+body{
+  font-family: "Yu Gothic Medium", YuGothic,sans-serif;
+  line-height: 1.7;
+  color: white;
+}
+a{
+  text-decoration: none;
 }
 img{
-    width: 300px;
+  max-width: 100%;
 }
 
-.header {
-  background-color: #f7f2b4;
-  height: 90px;
+.big-bg{
+  background-size:cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+#home{
+  background-image: url(docs/img/background.JPG);
+  min-height: 100vh;
+}
+#home .page-title{
+  text-transform: none;
+}
+.logo{
+  width: 150px;
+  margin-top: 14px;
+}
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li{
+  margin-left: 36px;
+}
+.main-nav a{
+  color: white;
+}
+.main-nav a:hover{
+  color: #0bd;
 }
 
-.header-logo{
-  float:left;
-  font-size:36px;
+.home-contnt{
+  text-align: center;
+  margin-top: 10%;
+}
+.home-contnt p{
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
 }
 
-.main {
-  background-color: #bdf7f1;
-  height: 600px;
+.page-title{
+  font-size: 5rem;
+  font-family: "Philosopher",serif;
+  text-transform: uppercase;
+  font-weight: normal;
 }
-
-.footer {
-  background-color: #ceccf3;
-  height: 270px;
+.button{
+  font-size: 1.375rem;
+  background:#0bd;
+  color:white;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.button:hover{
+  background:#0090aa;
 }
