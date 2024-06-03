@@ -1,7 +1,7 @@
 ---
 title: 'アルゴリズムってすごい'
 date: 2021-08-16
-draft: true
+draft: false
 summary: Unityで作った8puzzleの紹介
 ---
 (大学の部活内記事です)

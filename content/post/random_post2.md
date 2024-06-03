@@ -1,7 +1,7 @@
 ---
 title: '最短手数を見つけた（８パズル）'
 date: 2021-04-27
-draft: true
+draft: false
 summary: 8パズルの探索アルゴリズム紹介
 ---
 

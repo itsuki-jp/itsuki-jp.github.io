@@ -1,7 +1,7 @@
 ---
 title: 'Hit and Blow'
 date:  2020-11-28
-draft: true
+draft: false
 summary: 人生はじめての記事
 ---
 (大学の部活内記事です)
