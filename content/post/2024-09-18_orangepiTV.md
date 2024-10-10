@@ -86,3 +86,20 @@ channel: "27" (15/50) [30%] ...
 また、エンコードも重いです。結構時間がかかります...
 
 <img src="/images/2024-09-18_orangepiTV/image-2.png" width=50%>
+
+memo
+```
+sudo pcsc_scan
+dmesg | grep PX-S1UD
+
+cd /data/docker-mirakurun-epgstation
+sudo docker-compose up -d
+curl -X PUT "192.168.10.111:40772/api/config/channels/scan?refresh=true"
+```
+
+http://192.168.10.111:8888/#/
+
+```
+docker ps
+sudo docker rm containerID -f
+```
