@@ -2,32 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://itsuki-jp.github.io/post/hugo%E3%81%AE%E5%85%AC%E9%96%8B/</loc>
-    <lastmod>2024-06-03T22:15:23+09:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-10-11T21:46:33+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/</loc>
-    <lastmod>2024-06-03T22:40:09+09:00</lastmod>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-10-11T21:46:33+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/post/</loc>
-    <lastmod>2024-06-03T22:40:09+09:00</lastmod>
+    <loc>http://localhost:1313/post/2024-10-11_init-pc/</loc>
+    <lastmod>2024-10-11T21:46:33+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/post/wsl%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F%E8%A9%B1/</loc>
-    <lastmod>2024-06-03T22:40:09+09:00</lastmod>
+    <loc>http://localhost:1313/post/2024-09-18_orangepitv/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/post/random_post4/</loc>
-    <lastmod>2024-06-03T22:08:57+09:00</lastmod>
+    <loc>http://localhost:1313/post/nextjs%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E6%84%9F%E6%83%B3%E6%88%A6/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/post/random_post3/</loc>
-    <lastmod>2024-06-03T22:08:57+09:00</lastmod>
+    <loc>http://localhost:1313/post/hugo%E3%81%AE%E5%85%AC%E9%96%8B/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/post/random_post2/</loc>
-    <lastmod>2024-06-03T22:08:56+09:00</lastmod>
+    <loc>http://localhost:1313/post/wsl%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F%E8%A9%B1/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/post/random_post1/</loc>
-    <lastmod>2024-06-03T22:08:55+09:00</lastmod>
+    <loc>http://localhost:1313/post/random_post4/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/categories/</loc>
+    <loc>http://localhost:1313/post/random_post3/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
   </url><url>
-    <loc>https://itsuki-jp.github.io/tags/</loc>
+    <loc>http://localhost:1313/post/random_post2/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/random_post1/</loc>
+    <lastmod>2024-10-10T22:34:39+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
