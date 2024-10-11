@@ -103,3 +103,16 @@ http://192.168.10.111:8888/#/
 docker ps
 sudo docker rm containerID -f
 ```
+
+# 追記
+調子が悪く、ごちゃごちゃしてるうちに完全にみられなくなりました...
+下のリンクを参考にして再構築しました
+（やった方がいいかも～は全部やってない）
+https://qiita.com/2_MaYu_2/items/d4a3666892dec85ce5f6
+
+不調の原因はいくつかありそうだが、メインは pcsc_scan を自分側で動かしてた（動かせてた）ことかも
+```sh
+sudo systemctl stop pcscd.socket
+sudo systemctl disable pcscd.socket
+```
+これで解決する
