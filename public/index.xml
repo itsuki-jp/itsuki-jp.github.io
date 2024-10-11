@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>n_itsuki&#39;s blog</title>
-    <link>http://localhost:37373/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on n_itsuki&#39;s blog</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Oct 2024 22:07:17 +0900</lastBuildDate>
-    <atom:link href="http://localhost:37373/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Oct 2024 22:07:50 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>パソコンを買ったら最初にすること</title>
-      <link>http://localhost:37373/post/2024-10-11_init-pc/</link>
+      <link>http://localhost:1313/post/2024-10-11_init-pc/</link>
       <pubDate>Fri, 11 Oct 2024 21:27:43 +0900</pubDate>
-      <guid>http://localhost:37373/post/2024-10-11_init-pc/</guid>
+      <guid>http://localhost:1313/post/2024-10-11_init-pc/</guid>
       <description>Windowsのパソコンを買ったので、それの初期設定関連</description>
     </item>
     <item>
       <title>orangepi でテレビを見たい</title>
-      <link>http://localhost:37373/post/2024-09-18_orangepitv/</link>
+      <link>http://localhost:1313/post/2024-09-18_orangepitv/</link>
       <pubDate>Wed, 18 Sep 2024 20:28:37 +0900</pubDate>
-      <guid>http://localhost:37373/post/2024-09-18_orangepitv/</guid>
+      <guid>http://localhost:1313/post/2024-09-18_orangepitv/</guid>
       <description>OrangePiでテレビサーバーを立てて、パソコンやスマホで見る方法</description>
     </item>
     <item>
       <title>Next.jsのチュートリアル感想戦</title>
-      <link>http://localhost:37373/post/nextjs%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E6%84%9F%E6%83%B3%E6%88%A6/</link>
+      <link>http://localhost:1313/post/nextjs%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E6%84%9F%E6%83%B3%E6%88%A6/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:37373/post/nextjs%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E6%84%9F%E6%83%B3%E6%88%A6/</guid>
+      <guid>http://localhost:1313/post/nextjs%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%E6%84%9F%E6%83%B3%E6%88%A6/</guid>
       <description>Next.jsのチュートリアルをやってみた</description>
     </item>
     <item>
       <title>Hugoの公開</title>
-      <link>http://localhost:37373/post/hugo%E3%81%AE%E5%85%AC%E9%96%8B/</link>
+      <link>http://localhost:1313/post/hugo%E3%81%AE%E5%85%AC%E9%96%8B/</link>
       <pubDate>Mon, 03 Jun 2024 19:17:54 +0900</pubDate>
-      <guid>http://localhost:37373/post/hugo%E3%81%AE%E5%85%AC%E9%96%8B/</guid>
+      <guid>http://localhost:1313/post/hugo%E3%81%AE%E5%85%AC%E9%96%8B/</guid>
       <description>Hugo公開までの試行錯誤</description>
     </item>
     <item>
       <title>WSLと格闘した話</title>
-      <link>http://localhost:37373/post/wsl%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F%E8%A9%B1/</link>
+      <link>http://localhost:1313/post/wsl%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F%E8%A9%B1/</link>
       <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:37373/post/wsl%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
+      <guid>http://localhost:1313/post/wsl%E3%81%A8%E6%A0%BC%E9%97%98%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
       <description>はじめてのQiita</description>
     </item>
     <item>
       <title>府大から自転車で行ける楽しい場所3選（体力ゴリラ向けではない）</title>
-      <link>http://localhost:37373/post/random_post4/</link>
+      <link>http://localhost:1313/post/random_post4/</link>
       <pubDate>Sun, 17 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:37373/post/random_post4/</guid>
+      <guid>http://localhost:1313/post/random_post4/</guid>
       <description>自転車移動はよい</description>
     </item>
     <item>
       <title>アルゴリズムってすごい</title>
-      <link>http://localhost:37373/post/random_post3/</link>
+      <link>http://localhost:1313/post/random_post3/</link>
       <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:37373/post/random_post3/</guid>
+      <guid>http://localhost:1313/post/random_post3/</guid>
       <description>Unityで作った8puzzleの紹介</description>
     </item>
     <item>
       <title>最短手数を見つけた（８パズル）</title>
-      <link>http://localhost:37373/post/random_post2/</link>
+      <link>http://localhost:1313/post/random_post2/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:37373/post/random_post2/</guid>
+      <guid>http://localhost:1313/post/random_post2/</guid>
       <description>8パズルの探索アルゴリズム紹介</description>
     </item>
     <item>
       <title>Hit and Blow</title>
-      <link>http://localhost:37373/post/random_post1/</link>
+      <link>http://localhost:1313/post/random_post1/</link>
       <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:37373/post/random_post1/</guid>
+      <guid>http://localhost:1313/post/random_post1/</guid>
       <description>人生はじめての記事</description>
     </item>
   </channel>
