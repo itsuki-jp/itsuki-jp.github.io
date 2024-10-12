@@ -30,3 +30,8 @@ lastmod = true
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

@@ -35,3 +35,18 @@ tomlファイルに以下を追記する
 - draftの設定を`draft:false` -> `draft: true` に変更する
 - `hugo` コマンドを走らせる
   - これで書いた記事がpublicに生成される
+
+## メモ
+```md
+tags: [hugo, taxonomy]
+categories: [hugo]
+```
+
+``toml
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+```
+
+上記のように書くと、タグ・カテゴリーを設定できる
+url/categories/CATEGORY_NAME でアクセス可能。タグも同様
