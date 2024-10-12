@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='http://localhost:1313/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='http://localhost:1313/css/frameworks.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/github.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/github-style.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
+    <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
+    <title>orangepi でテレビを見たい - n_itsuki&#39;s blog</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/github-mark.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="OrangePiでテレビサーバーを立てて、パソコンやスマホで見る方法" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://localhost:1313/post/2024-09-18_orangepitv/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="orangepi でテレビを見たい - n_itsuki&#39;s blog" />
+<meta name="twitter:description"
+  content="OrangePiでテレビサーバーを立てて、パソコンやスマホで見る方法" />
+<meta name="twitter:site" content="http://localhost:1313/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="http://localhost:1313/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="orangepi でテレビを見たい - n_itsuki&#39;s blog">
+<meta property="og:description"
+  content="OrangePiでテレビサーバーを立てて、パソコンやスマホで見る方法" />
+<meta property="og:url" content="http://localhost:1313/post/2024-09-18_orangepitv/" />
+<meta property="og:site_name" content="orangepi でテレビを見たい" />
+<meta property="og:image"
+  content="http://localhost:1313/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2024-09-18 20:28:37 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="http://localhost:1313/">
+        <img class="octicon" height="32" width="32" src="/images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:http://localhost:1313/">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="http://localhost:1313/">
+        <img class="octicon octicon-mark-github v-align-middle" height="32" width="32" src="/images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/">
+                  <img class=" avatar-user"
+                    src="https://avatars.githubusercontent.com/u/63573439?v=4"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="http://localhost:1313/">n_itsuki</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
+                    <a href="http://localhost:1313/post/2024-09-18_orangepitv/">orangepi でテレビを見たい</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Wed, 18 Sep 2024 20:28:37 &#43;0900"
+                    class="no-wrap">
+                    Wed, 18 Sep 2024 20:28:37 &#43;0900</relative-time>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      1122 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><h1 id="はじめに">はじめに</h1>
+<p>パソコンとかスマホでテレビ、見たいですよね！！！</p>
+<p>ネットで調べてみると、 ラズパイの情報はたくさんありますが、私が持ってる Orange Pi の情報は一切なかったです&hellip;(2024年9月現在)</p>
+<p>なので、自分でやってみました！</p>
+<h1 id="使用機材">使用機材</h1>
+<ul>
+<li><a href="https://ja.aliexpress.com/item/1005005919873216.html">OrangePi 3B 4GB</a></li>
+<li><a href="https://amzn.asia/d/ivrVLJ1">PX-S1UD V2.0 (テレビチューナー)</a></li>
+<li><a href="https://amzn.asia/d/do9xBhP">SCR3310V2.0 (B-CAS リーダー)</a></li>
+<li><a href="https://amzn.asia/d/aOkgRfc">(mini B-CAS を B-CAS に変換するアダプター)</a></li>
+</ul>
+<h2 id="前提">前提</h2>
+<p>方法は忘れてしまいましたが、 OrangePi は SSD から起動できるようにしています</p>
+<h1 id="困った事等">困った事等</h1>
+<p>参考にしたサイト：<a href="https://blog.ch3cooh.jp/entry/2023/02/25/174845#PX-S1UD-V20-%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8A%E3%83%BC%E3%81%AE%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Raspberry Pi 4 と docker-mirakurun-epgstation で録画サーバーを構築する (2023年2月版)</a></p>
+<h2 id="詰まったこと1-docker">詰まったこと1: Docker</h2>
+<h3 id="詰まった">詰まった</h3>
+<p><code>sudo apt install -y git docker docker-compose</code>
+<code>docker -v</code>
+ここで、dockerのバージョンが表示されない。docker-composeは表示された</p>
+<h3 id="解決策">解決策</h3>
+<p><a href="https://kinsta.com/jp/blog/install-docker-ubuntu/#ubuntudocker-engine">【簡単な4つの方法】UbuntuにDockerをインストールするには</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install ca-certificates curl gnupg lsb-release
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo mkdir -p /etc/apt/keyrings
+</span></span><span class="line"><span class="cl">curl -fsSL https://download.docker.com/linux/ubuntu/gpg <span class="p">|</span> sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+</span></span><span class="line"><span class="cl">sudo chmod a+r /etc/apt/keyrings/docker.gpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> stable&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt install docker-ce docker-ce-cli containerd.io
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo reboot
+</span></span></code></pre></div><h2 id="詰まったこと２リーダーが上手く動いてない">詰まったこと２：リーダーが上手く動いてない</h2>
+<h3 id="詰まったこと">詰まったこと</h3>
+<p><code>curl -X PUT &quot;http://orangepi-ip-address:40772/api/config/channels/scan&quot;</code>
+でスキャンが上手く行かない</p>
+<pre tabindex="0"><code>channel: &#34;24&#34; (12/50) [24%] ...
+-&gt; 1 existing config found.
+-&gt; {&#34;name&#34;:&#34;テレビ朝日&#34;,&#34;type&#34;:&#34;GR&#34;,&#34;channel&#34;:&#34;24&#34;}
+# scan has skipped due to the &#34;refresh = false&#34; option because an existing config was found.
+</code></pre><h3 id="解決策-1">解決策</h3>
+<p>まずリーダーが認識されてるか確認する
+<code>lsusb</code></p>
+<p>次に、B-CASが読み取れているか確認
+<code>sudo pcsc_scan</code>
+私は mini B-CAS が読み込まれてなかったのをこれで気づくことが出来ました！（なのでアダプターを購入した）</p>
+<p><code>curl -X PUT &quot;orangepi-IP:40772/api/config/channels/scan?refresh=true&quot;</code></p>
+<pre tabindex="0"><code class="language-terminal" data-lang="terminal">channel: &#34;27&#34; (15/50) [30%] ...
+-&gt; 2 services found.
+-&gt; {&#34;name&#34;:&#34;ＮＨＫ総合&#34;,&#34;type&#34;:&#34;GR&#34;,&#34;channel&#34;:&#34;27&#34;,&#34;isDisabled&#34;:false}
+</code></pre><h1 id="結果">結果</h1>
+<p>見れるようになりました！（さすがにテレビ画面は権利的に良くない気がするので&hellip;）
+<img src="/images/2024-09-18_orangepiTV/image.png" width=50%>
+<img src="/images/2024-09-18_orangepiTV/image-1.png" width=50%></p>
+<h1 id="最後に">最後に</h1>
+<p>結果でも書いたように見れるようになりましたが、OrangePiのスペック的に480pでも偶に止まります&hellip;
+ただ、録画された番組はサクサク見れるので、そのように運用すると良さそうです</p>
+<p>また、エンコードも重いです。結構時間がかかります&hellip;</p>
+<img src="/images/2024-09-18_orangepiTV/image-2.png" width=50%>
+<p>memo</p>
+<pre tabindex="0"><code>sudo pcsc_scan
+dmesg | grep PX-S1UD
+
+cd /data/docker-mirakurun-epgstation
+sudo docker-compose up -d
+curl -X PUT &#34;192.168.10.111:40772/api/config/channels/scan?refresh=true&#34;
+</code></pre><p>http://192.168.10.111:8888/#/</p>
+<pre tabindex="0"><code>docker ps
+sudo docker rm containerID -f
+</code></pre><h1 id="追記">追記</h1>
+<p>調子が悪く、ごちゃごちゃしてるうちに完全にみられなくなりました&hellip;
+下のリンクを参考にして再構築しました
+（やった方がいいかも～は全部やってない）
+<a href="https://qiita.com/2_MaYu_2/items/d4a3666892dec85ce5f6">https://qiita.com/2_MaYu_2/items/d4a3666892dec85ce5f6</a></p>
+<p>不調の原因はいくつかありそうだが、メインは pcsc_scan を自分側で動かしてた（動かせてた）ことかも</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl stop pcscd.socket
+</span></span><span class="line"><span class="cl">sudo systemctl disable pcscd.socket
+</span></span></code></pre></div><p>これで解決する</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='http://localhost:1313/js/toc.js'></script>
+<link rel="stylesheet" href='http://localhost:1313/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="http://localhost:1313/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="http://localhost:1313/js/github-style.js"></script>
+
+
+
+
+
+
+
+</html>
