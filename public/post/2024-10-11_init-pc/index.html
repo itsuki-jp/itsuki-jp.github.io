@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
-    <title>Hit and Blow - n_itsuki&#39;s blog</title>
+    <title>パソコンを買ったら最初にすること - n_itsuki&#39;s blog</title>
     
     <link rel="icon" type="image/x-icon" href='/images/github-mark.png'>
     
@@ -18,17 +18,17 @@
 
     
     <meta name="description"
-  content="人生はじめての記事" />
+  content="Windowsのパソコンを買ったので、それの初期設定関連" />
 <meta name="keywords"
   content='' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="http://localhost:1313/post/random_post1/" />
+<link rel="canonical" href="http://localhost:1313/post/2024-10-11_init-pc/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Hit and Blow - n_itsuki&#39;s blog" />
+<meta name="twitter:title" content="パソコンを買ったら最初にすること - n_itsuki&#39;s blog" />
 <meta name="twitter:description"
-  content="人生はじめての記事" />
+  content="Windowsのパソコンを買ったので、それの初期設定関連" />
 <meta name="twitter:site" content="http://localhost:1313/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +36,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Hit and Blow - n_itsuki&#39;s blog">
+<meta property="og:title" content="パソコンを買ったら最初にすること - n_itsuki&#39;s blog">
 <meta property="og:description"
-  content="人生はじめての記事" />
-<meta property="og:url" content="http://localhost:1313/post/random_post1/" />
-<meta property="og:site_name" content="Hit and Blow" />
+  content="Windowsのパソコンを買ったので、それの初期設定関連" />
+<meta property="og:url" content="http://localhost:1313/post/2024-10-11_init-pc/" />
+<meta property="og:site_name" content="パソコンを買ったら最初にすること" />
 <meta property="og:image"
   content="http://localhost:1313/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2020-11-28 00:00:00 &#43;0000 UTC" />
+<meta property="article:published_time" content="2024-10-11 21:27:43 &#43;0900 JST" />
 
 
 
@@ -141,13 +141,13 @@
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                    <a href="http://localhost:1313/post/random_post1/">Hit and Blow</a>
+                    <a href="http://localhost:1313/post/2024-10-11_init-pc/">パソコンを買ったら最初にすること</a>
                   </strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Sat, 28 Nov 2020 00:00:00 &#43;0000"
+                  Created <relative-time datetime="Fri, 11 Oct 2024 21:27:43 &#43;0900"
                     class="no-wrap">
-                    Sat, 28 Nov 2020 00:00:00 &#43;0000</relative-time>
+                    Fri, 11 Oct 2024 21:27:43 &#43;0900</relative-time>
 
                   
                 </div>
@@ -178,7 +178,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      582 Words
+                      460 Words
                     
 
                   </div>
@@ -190,49 +190,52 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><p>(大学の部活内記事です)</p>
-<h2 id="はじめに">はじめに</h2>
-<p>　こんにちは。一回生のn_itsukiです。
-　今回は、初めて作り遂げたゲーム、「Hit and Blow」の紹介をしていきます。</p>
-<p>　私が作ったのは、ヒットアンドブローやマスターマインドと呼ばれている、4つの色を推測するゲームの3色バージョンです。一応、元々は4色で作る予定だったのですが、スクリプトを書いていくうちに何がなんだか分からなくなり、3色に変更しました。</p>
-<h2 id="頑張ったこと">頑張ったこと</h2>
+                <article class="markdown-body entry-content container-lg"><p>(この記事を書く環境がなかったので、issueにメモをした！)</p>
+<p><a href="https://github.com/itsuki-jp/itsuki-jp.github.io/issues/3">https://github.com/itsuki-jp/itsuki-jp.github.io/issues/3</a></p>
+<h1 id="wsl-を使えるようにする">WSL を使えるようにする</h1>
+<p>参考リンク：https://learn.microsoft.com/ja-jp/windows/wsl/install</p>
+<ol>
+<li>「仮想マシンプラットフォーム」「Linux用Windowsサブシステム」をオンに変更
+<img src="/images/2024-10-11_init-pc/image-1.png" alt="alt text">
+<img src="/images/2024-10-11_init-pc/image-2.png" alt="alt text"></li>
+<li><code>wsl --upgrade</code></li>
+<li><code>wsl --install</code></li>
+<li><code>wsl --install -d Ubuntu-24.04</code>
+<img src="/images/2024-10-11_init-pc/image-3.png" alt="alt text"></li>
+</ol>
+<h1 id="github-を使えるようにする">GitHub を使えるようにする</h1>
+<p>参考リンク</p>
 <ul>
-<li>C#で書いた
-<ul>
-<li>Pythonは少し触ったことがあったが、C#は無かったため、つらかった。UnityでPythonが使えるIronPythonがあるらしいのだが、それの導入も使用方法もよくわからなかったため、結局C#で書きました(;&rsquo;∀&rsquo;)。</li>
+<li><a href="https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></li>
+<li><a href="https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection</a></li>
 </ul>
+<ol>
+<li><code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</code></li>
+<li><code>cat .ssh/id_ed25519, GitHubのSSH設定に貼る</code></li>
+<li><code>ssh -T git@github.com</code></li>
+<li>
+<blockquote>
+<p><code>Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.</code>が表示されればOK</p>
+</blockquote>
 </li>
-</ul>
-<p><img src="/images/random_post1/Screen3.jpg" alt=''></p>
-<p><img src="/images/random_post1/explain.jpg" alt=''></p>
-<ul>
-<li>デザイン
-<ul>
-<li>最初の方は灰色ベースで作っていたが、あまりにも暗くなりすぎたため青に変更しから、少し明るくなったはず。</li>
-</ul>
-</li>
-<li>ゲームを完成させた
-<ul>
-<li>以前からUnityに興味があり、本を買い真似てゲームを「作った」ことはあるが、どれを途中で飽きてしまったため今回初めて完遂した！。</li>
-</ul>
-</li>
-</ul>
-<h2 id="改善点">改善点</h2>
-<ul>
-<li>説明画面が分かりづらい
-<ul>
-<li>今見返してみると、ヒットアンドブローを遊んだことのない人には、伝わりづらかったかもしれない。</li>
-</ul>
-</li>
-<li>オリジナル要素がない
-<ul>
-<li>思いついたら、実装してみます</li>
-</ul>
-</li>
-</ul>
-<h2 id="さいごに">さいごに</h2>
-<p>　このゲームは3分もあれば終わるので、時間がある方は、遊んでみてください！！！</p>
-<p><a href="https://unityroom.com/games/random_hitandblow/">https://unityroom.com/games/random_hitandblow/</a></p>
+<li>適当にダウンロードする <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+<li><code>git config --global user.name &quot;USER NAME&quot;</code></li>
+<li><code>git config --global user.email &quot;email&quot;</code></li>
+</ol>
+<h1 id="noodejs-を使えるようにする">Noode.js を使えるようにする</h1>
+<h2 id="windows-本体">windows 本体</h2>
+<p>参考リンク：https://nodejs.org/en/download/prebuilt-installer/current</p>
+<ol>
+<li>node.js インストールする</li>
+</ol>
+<h2 id="wsl">WSL</h2>
+<p>参考リンク：https://learn.microsoft.com/ja-jp/windows/dev-environment/javascript/nodejs-on-wsl</p>
+<ol>
+<li><code>sudo apt-get install curl</code></li>
+<li><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash</code>
+(いろいろエラー出るかもしれないけど、新規に立ち上げればいい)</li>
+<li><code>nvm install --lts</code></li>
+</ol>
 </article>
               </div>
             </div>

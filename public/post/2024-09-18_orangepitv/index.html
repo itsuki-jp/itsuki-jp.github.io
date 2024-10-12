@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/css/syntax.css' />
-    <title>Hit and Blow - n_itsuki&#39;s blog</title>
+    <title>orangepi でテレビを見たい - n_itsuki&#39;s blog</title>
     
     <link rel="icon" type="image/x-icon" href='/images/github-mark.png'>
     
@@ -18,17 +18,17 @@
 
     
     <meta name="description"
-  content="人生はじめての記事" />
+  content="OrangePiでテレビサーバーを立てて、パソコンやスマホで見る方法" />
 <meta name="keywords"
   content='' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="http://localhost:1313/post/random_post1/" />
+<link rel="canonical" href="http://localhost:1313/post/2024-09-18_orangepitv/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Hit and Blow - n_itsuki&#39;s blog" />
+<meta name="twitter:title" content="orangepi でテレビを見たい - n_itsuki&#39;s blog" />
 <meta name="twitter:description"
-  content="人生はじめての記事" />
+  content="OrangePiでテレビサーバーを立てて、パソコンやスマホで見る方法" />
 <meta name="twitter:site" content="http://localhost:1313/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +36,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Hit and Blow - n_itsuki&#39;s blog">
+<meta property="og:title" content="orangepi でテレビを見たい - n_itsuki&#39;s blog">
 <meta property="og:description"
-  content="人生はじめての記事" />
-<meta property="og:url" content="http://localhost:1313/post/random_post1/" />
-<meta property="og:site_name" content="Hit and Blow" />
+  content="OrangePiでテレビサーバーを立てて、パソコンやスマホで見る方法" />
+<meta property="og:url" content="http://localhost:1313/post/2024-09-18_orangepitv/" />
+<meta property="og:site_name" content="orangepi でテレビを見たい" />
 <meta property="og:image"
   content="http://localhost:1313/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2020-11-28 00:00:00 &#43;0000 UTC" />
+<meta property="article:published_time" content="2024-09-18 20:28:37 &#43;0900 JST" />
 
 
 
@@ -141,13 +141,13 @@
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                    <a href="http://localhost:1313/post/random_post1/">Hit and Blow</a>
+                    <a href="http://localhost:1313/post/2024-09-18_orangepitv/">orangepi でテレビを見たい</a>
                   </strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Sat, 28 Nov 2020 00:00:00 &#43;0000"
+                  Created <relative-time datetime="Wed, 18 Sep 2024 20:28:37 &#43;0900"
                     class="no-wrap">
-                    Sat, 28 Nov 2020 00:00:00 &#43;0000</relative-time>
+                    Wed, 18 Sep 2024 20:28:37 &#43;0900</relative-time>
 
                   
                 </div>
@@ -178,7 +178,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      582 Words
+                      1122 Words
                     
 
                   </div>
@@ -190,49 +190,89 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><p>(大学の部活内記事です)</p>
-<h2 id="はじめに">はじめに</h2>
-<p>　こんにちは。一回生のn_itsukiです。
-　今回は、初めて作り遂げたゲーム、「Hit and Blow」の紹介をしていきます。</p>
-<p>　私が作ったのは、ヒットアンドブローやマスターマインドと呼ばれている、4つの色を推測するゲームの3色バージョンです。一応、元々は4色で作る予定だったのですが、スクリプトを書いていくうちに何がなんだか分からなくなり、3色に変更しました。</p>
-<h2 id="頑張ったこと">頑張ったこと</h2>
+                <article class="markdown-body entry-content container-lg"><h1 id="はじめに">はじめに</h1>
+<p>パソコンとかスマホでテレビ、見たいですよね！！！</p>
+<p>ネットで調べてみると、 ラズパイの情報はたくさんありますが、私が持ってる Orange Pi の情報は一切なかったです&hellip;(2024年9月現在)</p>
+<p>なので、自分でやってみました！</p>
+<h1 id="使用機材">使用機材</h1>
 <ul>
-<li>C#で書いた
-<ul>
-<li>Pythonは少し触ったことがあったが、C#は無かったため、つらかった。UnityでPythonが使えるIronPythonがあるらしいのだが、それの導入も使用方法もよくわからなかったため、結局C#で書きました(;&rsquo;∀&rsquo;)。</li>
+<li><a href="https://ja.aliexpress.com/item/1005005919873216.html">OrangePi 3B 4GB</a></li>
+<li><a href="https://amzn.asia/d/ivrVLJ1">PX-S1UD V2.0 (テレビチューナー)</a></li>
+<li><a href="https://amzn.asia/d/do9xBhP">SCR3310V2.0 (B-CAS リーダー)</a></li>
+<li><a href="https://amzn.asia/d/aOkgRfc">(mini B-CAS を B-CAS に変換するアダプター)</a></li>
 </ul>
-</li>
-</ul>
-<p><img src="/images/random_post1/Screen3.jpg" alt=''></p>
-<p><img src="/images/random_post1/explain.jpg" alt=''></p>
-<ul>
-<li>デザイン
-<ul>
-<li>最初の方は灰色ベースで作っていたが、あまりにも暗くなりすぎたため青に変更しから、少し明るくなったはず。</li>
-</ul>
-</li>
-<li>ゲームを完成させた
-<ul>
-<li>以前からUnityに興味があり、本を買い真似てゲームを「作った」ことはあるが、どれを途中で飽きてしまったため今回初めて完遂した！。</li>
-</ul>
-</li>
-</ul>
-<h2 id="改善点">改善点</h2>
-<ul>
-<li>説明画面が分かりづらい
-<ul>
-<li>今見返してみると、ヒットアンドブローを遊んだことのない人には、伝わりづらかったかもしれない。</li>
-</ul>
-</li>
-<li>オリジナル要素がない
-<ul>
-<li>思いついたら、実装してみます</li>
-</ul>
-</li>
-</ul>
-<h2 id="さいごに">さいごに</h2>
-<p>　このゲームは3分もあれば終わるので、時間がある方は、遊んでみてください！！！</p>
-<p><a href="https://unityroom.com/games/random_hitandblow/">https://unityroom.com/games/random_hitandblow/</a></p>
+<h2 id="前提">前提</h2>
+<p>方法は忘れてしまいましたが、 OrangePi は SSD から起動できるようにしています</p>
+<h1 id="困った事等">困った事等</h1>
+<p>参考にしたサイト：<a href="https://blog.ch3cooh.jp/entry/2023/02/25/174845#PX-S1UD-V20-%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8A%E3%83%BC%E3%81%AE%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Raspberry Pi 4 と docker-mirakurun-epgstation で録画サーバーを構築する (2023年2月版)</a></p>
+<h2 id="詰まったこと1-docker">詰まったこと1: Docker</h2>
+<h3 id="詰まった">詰まった</h3>
+<p><code>sudo apt install -y git docker docker-compose</code>
+<code>docker -v</code>
+ここで、dockerのバージョンが表示されない。docker-composeは表示された</p>
+<h3 id="解決策">解決策</h3>
+<p><a href="https://kinsta.com/jp/blog/install-docker-ubuntu/#ubuntudocker-engine">【簡単な4つの方法】UbuntuにDockerをインストールするには</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install ca-certificates curl gnupg lsb-release
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo mkdir -p /etc/apt/keyrings
+</span></span><span class="line"><span class="cl">curl -fsSL https://download.docker.com/linux/ubuntu/gpg <span class="p">|</span> sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+</span></span><span class="line"><span class="cl">sudo chmod a+r /etc/apt/keyrings/docker.gpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb [arch=</span><span class="k">$(</span>dpkg --print-architecture<span class="k">)</span><span class="s2"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span class="k">$(</span>lsb_release -cs<span class="k">)</span><span class="s2"> stable&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt install docker-ce docker-ce-cli containerd.io
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo reboot
+</span></span></code></pre></div><h2 id="詰まったこと２リーダーが上手く動いてない">詰まったこと２：リーダーが上手く動いてない</h2>
+<h3 id="詰まったこと">詰まったこと</h3>
+<p><code>curl -X PUT &quot;http://orangepi-ip-address:40772/api/config/channels/scan&quot;</code>
+でスキャンが上手く行かない</p>
+<pre tabindex="0"><code>channel: &#34;24&#34; (12/50) [24%] ...
+-&gt; 1 existing config found.
+-&gt; {&#34;name&#34;:&#34;テレビ朝日&#34;,&#34;type&#34;:&#34;GR&#34;,&#34;channel&#34;:&#34;24&#34;}
+# scan has skipped due to the &#34;refresh = false&#34; option because an existing config was found.
+</code></pre><h3 id="解決策-1">解決策</h3>
+<p>まずリーダーが認識されてるか確認する
+<code>lsusb</code></p>
+<p>次に、B-CASが読み取れているか確認
+<code>sudo pcsc_scan</code>
+私は mini B-CAS が読み込まれてなかったのをこれで気づくことが出来ました！（なのでアダプターを購入した）</p>
+<p><code>curl -X PUT &quot;orangepi-IP:40772/api/config/channels/scan?refresh=true&quot;</code></p>
+<pre tabindex="0"><code class="language-terminal" data-lang="terminal">channel: &#34;27&#34; (15/50) [30%] ...
+-&gt; 2 services found.
+-&gt; {&#34;name&#34;:&#34;ＮＨＫ総合&#34;,&#34;type&#34;:&#34;GR&#34;,&#34;channel&#34;:&#34;27&#34;,&#34;isDisabled&#34;:false}
+</code></pre><h1 id="結果">結果</h1>
+<p>見れるようになりました！（さすがにテレビ画面は権利的に良くない気がするので&hellip;）
+<img src="/images/2024-09-18_orangepiTV/image.png" width=50%>
+<img src="/images/2024-09-18_orangepiTV/image-1.png" width=50%></p>
+<h1 id="最後に">最後に</h1>
+<p>結果でも書いたように見れるようになりましたが、OrangePiのスペック的に480pでも偶に止まります&hellip;
+ただ、録画された番組はサクサク見れるので、そのように運用すると良さそうです</p>
+<p>また、エンコードも重いです。結構時間がかかります&hellip;</p>
+<img src="/images/2024-09-18_orangepiTV/image-2.png" width=50%>
+<p>memo</p>
+<pre tabindex="0"><code>sudo pcsc_scan
+dmesg | grep PX-S1UD
+
+cd /data/docker-mirakurun-epgstation
+sudo docker-compose up -d
+curl -X PUT &#34;192.168.10.111:40772/api/config/channels/scan?refresh=true&#34;
+</code></pre><p>http://192.168.10.111:8888/#/</p>
+<pre tabindex="0"><code>docker ps
+sudo docker rm containerID -f
+</code></pre><h1 id="追記">追記</h1>
+<p>調子が悪く、ごちゃごちゃしてるうちに完全にみられなくなりました&hellip;
+下のリンクを参考にして再構築しました
+（やった方がいいかも～は全部やってない）
+<a href="https://qiita.com/2_MaYu_2/items/d4a3666892dec85ce5f6">https://qiita.com/2_MaYu_2/items/d4a3666892dec85ce5f6</a></p>
+<p>不調の原因はいくつかありそうだが、メインは pcsc_scan を自分側で動かしてた（動かせてた）ことかも</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl stop pcscd.socket
+</span></span><span class="line"><span class="cl">sudo systemctl disable pcscd.socket
+</span></span></code></pre></div><p>これで解決する</p>
 </article>
               </div>
             </div>
