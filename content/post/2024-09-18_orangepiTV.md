@@ -50,7 +50,7 @@ sudo reboot
 
 ## 詰まったこと２：リーダーが上手く動いてない
 ### 詰まったこと
-`curl -X PUT "http://orangepi-ip-address:40772/api/config/channels/scan"`
+`curl -X PUT "http://localhost:40772/api/config/channels/scan"`
 でスキャンが上手く行かない
 ```
 channel: "24" (12/50) [24%] ...
@@ -66,7 +66,7 @@ channel: "24" (12/50) [24%] ...
 `sudo pcsc_scan`
 私は mini B-CAS が読み込まれてなかったのをこれで気づくことが出来ました！（なのでアダプターを購入した）
 
-`curl -X PUT "orangepi-IP:40772/api/config/channels/scan?refresh=true"`
+`curl -X PUT "localhost:40772/api/config/channels/scan?refresh=true"`
 
 ```terminal
 channel: "27" (15/50) [30%] ...
