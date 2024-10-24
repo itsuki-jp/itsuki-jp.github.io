@@ -1,7 +1,7 @@
 baseURL = "https://itsuki-jp.github.io/"
 languageCode = "ja"
 title = "n_itsuki's blog"
-theme = "github"
+theme = "github_fork"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 

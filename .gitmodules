@@ -4,3 +4,6 @@
 [submodule "themes/github"]
 	path = themes/github
 	url = https://github.com/MeiK2333/github-style.git
+[submodule "themes/github_fork"]
+	path = themes/github_fork
+	url = git@github.com:itsuki-jp/github-style.git
