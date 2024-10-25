@@ -17,6 +17,7 @@ pygmentsUseClasses = true
   location = "Japan"
   userStatusEmoji = "😎"
   enableGitalk = false
+  images=["/images/background_image.jpg"]
   [[params.links]]
     title = "Qiita"
     href = "https://qiita.com/n_itsuki"
