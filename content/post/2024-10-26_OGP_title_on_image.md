@@ -1,7 +1,7 @@
 ---
 title: "2024 10 26_OGP_title_on_image"
 date: 2024-10-26T12:14:51+09:00
-draft: false
+draft: true
 ---
 
 assets配下に置く
