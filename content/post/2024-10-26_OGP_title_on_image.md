@@ -1,7 +1,7 @@
 ---
-title: "OGPにて画像にタイトルを表示したい！"
+title: "HugoのOGPにて画像にタイトルを表示したい！"
 date: 2024-10-26T12:14:51+09:00
-draft: true
+draft: false
 summary: いい感じの背景画像を思いついたら変えたいね
 ---
 # はじめに
