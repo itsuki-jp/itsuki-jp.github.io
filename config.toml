@@ -24,6 +24,7 @@ pygmentsUseClasses = true
     icon = "https://cdn.qiita.com/assets/public/push_notification/image-qiitan-572179a3bbde375850422ea48b2b6272.png"
 
 lastmod = true
+enableGitInfo = true
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
