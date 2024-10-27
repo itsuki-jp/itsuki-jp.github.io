@@ -63,7 +63,7 @@ summary: いい感じの背景画像を思いついたら変えたいね
 {{ with resources.Get "images/OGP_image.jpg" }}
   {{ with . | images.Filter $filter }}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ .RelPermalink }}">
+    <meta name="twitter:image" content="{{ .Permalink }}">
   {{ end }}
 {{ end }}
 ```
@@ -108,14 +108,14 @@ summary: いい感じの背景画像を思いついたら変えたいね
 
 {{ with resources.Get "images/OGP_image.jpg" }}
   {{ with . | images.Filter $filter }}
-    <meta property="og:image" content="{{ .RelPermalink }}">
+    <meta property="og:image" content="{{ .Permalink }}">
   {{ end }}
 {{ end }}
 ```
 </details>
 
 # 詰まったこと
-## 画像が読み込まれない...
+## 画像が読み込まれない...(localhostにて)
 永遠に「画像が読み込めないよ～」とエラーが表示され続けました。`static`フォルダに画像を格納していたことが原因でした...
 
 テキストを描写できるかを試す前に、そもそも画像が読み込めるか・加工できるかを確かめましょう！
@@ -133,6 +133,9 @@ summary: いい感じの背景画像を思いついたら変えたいね
 [Directory structure](https://gohugo.io/getting-started/directory-structure/)を読むと、
 - assets: グローバルリソースを置く。`assets pipeline`に渡される
 - static: 静的ファイルを置く。
+
+##  画像表示されない（GitHub Pages公開後にて）
+画像のパスを`Permalink`に変えると絶対パスにしてくれるので表示ます！
 
 ## 全然文字が表示されない...
 [公式通り](https://gohugo.io/functions/images/text/)にやってるのに、全然文字が表示されませんでした。画像のサイズが大きく、文字が小さく表示されていたのが原因でした...(左上に小さく書いてあります！)
