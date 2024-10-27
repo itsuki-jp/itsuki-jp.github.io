@@ -147,3 +147,7 @@ summary: いい感じの背景画像を思いついたら変えたいね
 # 最後に
 `resources/_gen`はgitignoreに書いたほうがいいですね。これが突っ込まれてました
 ![alt text](/images/2024-10-26_OGP_title_on_image/image-3.png)
+
+# 追記
+OGPの画像が見れない😢😢😢
+![alt text](/images/2024-10-26_OGP_title_on_image/image-4.png)
