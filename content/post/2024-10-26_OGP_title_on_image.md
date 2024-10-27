@@ -149,5 +149,16 @@ summary: いい感じの背景画像を思いついたら変えたいね
 ![alt text](/images/2024-10-26_OGP_title_on_image/image-3.png)
 
 # 追記
+
 OGPの画像が見れない😢😢😢
+
 ![alt text](/images/2024-10-26_OGP_title_on_image/image-4.png)
+
+## 追記2
+Discordだと見れますね...
+
+![alt text](/images/2024-10-26_OGP_title_on_image/image-5.png)
+
+## 追記3
+見れる記事は見れる...?
+![alt text](/images/2024-10-26_OGP_title_on_image/image-6.png)
