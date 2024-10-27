@@ -2,7 +2,7 @@
 title: "初めての3Dプリンタ、Bambu A1 mini"
 date: 2024-10-27T17:45:27+09:00
 draft: false
-summmary: 3Dプリンタを買いました！
+summary: 3Dプリンタを買いました！
 ---
 
 # はじめに
