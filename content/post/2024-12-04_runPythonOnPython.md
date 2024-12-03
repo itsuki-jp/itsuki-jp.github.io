@@ -9,7 +9,7 @@ summary: アドカレ4日目
 # はじめに・経緯
 [ラムダノート](https://www.lambdanote.com/)を知っていますか？私も先輩から聞いて先日初めて知りましたが、技術書の出版社です。ここのいいところは、PDF版の値段＋数百円で紙媒体の本もついてくるところだと思います。PDFも紙媒体もお得に買える！ということで、[【RubyでつくるRuby ゼロから学びなおすプログラミング言語入門】](https://www.lambdanote.com/products/ruby-ruby)を買いました。
 
-![alt text](/images/2024-11-30_runPythonOnPython/image.png)
+![alt text](/images/2024-12-04_runPythonOnPython/image.png)
 
 この本の著者の方の【[『RubyでつくるRuby』の読み方（私論）](https://golden-lucky.hatenablog.com/entry/2023/01/10/131903)】に以下のように書いてありました。
 > 『RubyでつくるRuby』を読みながら『PythonでつくるPython』とか『JavaScriptでつくるJavaScript』を自分でやってみることです。これには次の2つの意味でものすごい教育効果があると思います。
@@ -21,7 +21,7 @@ summary: アドカレ4日目
 # PythonでPythonを動かそう
 ## コード
 ```py
-interp.pt
+# interp.py
 import sys
 from minPython import minPython
 
@@ -149,9 +149,17 @@ evaluate(custom_tree, {}, {})
 ```
 
 ## 解説
-`hogehoge.py` を用意して、`python interp.py hogehoge.py` を実行すれば動きます！簡単ですね！！！
+コードは以下のように、`tree[0]`が`+`であれば、再帰的に値を求めて、足し算をするようにしています。わかりやすくていいですね！
 
-まあ実際はそんなことはなく、最初のほうの`from minPython import minPython`がほぼすべての仕事をしてくれてます。
+```py
+elif tree[0] == "+":
+    return evaluate(tree[1], global_var, local_var) + 
+    evaluate(tree[2], global_var, local_var)
+```
+
+実行手順は`hogehoge.py` を用意して、`python interp.py hogehoge.py` を実行すれば動きます！簡単ですね！！！
+
+まあ実際はそんなことはなく、最初のほうの`from minPython import minPython`がほぼすべての仕事をしてくれてます。(`interp.py`はきれいに成形された値を再帰的に求めてるだけです...)
 
 ### AST(抽象構文木)
 `minPython`の話に移る前に、少し前の話をします。
@@ -213,7 +221,9 @@ PythonにはAST(抽象構文木)という、コードをいい感じに木で表
 ]
 ```
 
-`minPython`はこの世の誰かが既に書いてくれていそうですが、今回はせっかくなので書きました
+`minPython`はこの世の誰かが既に書いてくれていそうですが、今回はせっかくなので書きました。
+
+やってることは、あまり`interp.py`と変わらないものの、astのインスタンスの種類によって場合分けするのがめんどくさかったですね。
 
 ```py
 # minPython.py
@@ -320,6 +330,18 @@ class minPython:
             ]
         else:
             return None
+```
+
+下の`assign`を見てもらえるとわかりやすいのですが、代入と一言で言っても、`a = 1`と`a[0] = 1`のような書き方があり、そこらへんをある程度網羅するのもめんどくさかったですね。
+```py
+elif isinstance(tree, ast.Assign):
+    if isinstance(tree.targets[0], ast.Subscript):
+        target = self.evaluate(tree.targets[0].value)
+        index = self.evaluate(tree.targets[0].slice)
+        value = self.evaluate(tree.value)
+        return ["subscript_assign", target, index, value]
+    else:
+        return ["var_assign", tree.targets[0].id, self.evaluate(tree.value)]
 ```
 
 # 最後に
