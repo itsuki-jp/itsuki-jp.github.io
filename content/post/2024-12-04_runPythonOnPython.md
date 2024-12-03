@@ -1,7 +1,7 @@
 ---
 title: PythonでつくるPython
 date: 2024-11-30T17:02:25+09:00
-draft: true
+draft: false
 summary: アドカレ4日目
 ---
 どこかの、アドベントカレンダー4日目の記事です！！！
