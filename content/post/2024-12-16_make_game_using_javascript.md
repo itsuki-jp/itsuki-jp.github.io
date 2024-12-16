@@ -1,7 +1,7 @@
 ---
 title: HTMLとJavaScriptでゲームを作りたい！
 date: 2024-12-03T21:57:35+09:00
-draft: true
+draft: false
 summary: "make game using javascript"
 ---
 # はじめに
