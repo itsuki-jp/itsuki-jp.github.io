@@ -1,7 +1,7 @@
 ---
 title: Pyxelで作る簡易RPG
 date: 2024-12-14T23:42:51+09:00
-draft: true
+draft: false
 summary: 某アドカレ23日目！！！
 ---
 # はじめに
