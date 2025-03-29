@@ -222,4 +222,4 @@ You can wake a Service up using a WebSocket connection, but that connection may 
 2年くらい前にDiscordBotを作ったことがあるものの、記憶がなくなっていました...記憶力が悪いとめんどくさいですが、毎回新鮮な気持ちで取り組めるのでいいですね（？）
 
 
-＊参考：{{< linkcard "https://zenn.dev/rikei_ocojo/articles/hugo-typescript-tailwind" >}}
+＊参考：{{< linkcard "https://zenn.dev/maguro_alterna/articles/65906deef48e2b" >}}
