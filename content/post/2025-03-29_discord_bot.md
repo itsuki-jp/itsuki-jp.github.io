@@ -34,12 +34,11 @@ tags: [discord, bot, koyeb, gemini]
 ```
 
 ### `.env`
-TOKENはDiscordBotのトークンを入れます。
-https://discord.com/developers/applications　からBotの設定をする必要がありました（うろ覚えですが、めんどくさかった気がします）
 ```.env
 GEMINI_API=hogehoge
 TOKEN=hugahuga
 ```
+TOKENはDiscordBotのトークンを入れます。{{<linkcard "https://discord.com/developers/applications" >}}　からBotの設定をする必要がありました（うろ覚えですが、めんどくさかった気がします）
 
 ### `Dockerfile`
 <details>
@@ -201,18 +200,18 @@ GitHubと連携できるので、さっきのコードを含むレポジトリ�
 ## cron
 Koyebの無料プランは1時間何もアクションがないとSleepモードに入ります
 
-そのため、定期的にHTTP/1.1 GETリクエストを投げる必要があります。uptimerobotを使おうと思ったのですが、無料ユーザーは`HEAD`しか投げられないので、https://console.cron-job.org/ を使いました。
+そのため、定期的にHTTP/1.1 GETリクエストを投げる必要があります。uptimerobotを使おうと思ったのですが、無料ユーザーは`HEAD`しか投げられないので、{{<linkcard "https://console.cron-job.org/" >}} を使いました。
 
 cron-jobはデフォルトの設定でGETできるので、30分に一回確認するように設定したところちゃんと動いている気がします。
 
-https://www.koyeb.com/docs/run-and-scale/scale-to-zero
+{{<linkcard "https://www.koyeb.com/docs/run-and-scale/scale-to-zero">}}
 
 > Your Service will be scaled down to zero if all of the following conditions are met for a given period of time called idle period:
 > - No traffic is received from the Internet.
 > - No held connection (e.g. websocket or HTTP/2 stream) from the Internet to your Service.
 > - No new deployment occurred.
 
-https://www.koyeb.com/docs/run-and-scale/scale-to-zero#limitations
+{{<linkcard "https://www.koyeb.com/docs/run-and-scale/scale-to-zero#limitations">}}
 
 > Inbound requests to a sleeping Service may be slower due to a cold start, which typically takes 1 to 5 seconds to create a new dedicated virtual machine
 Scale-to-zero works only for Services exposed to the Internet.
@@ -223,4 +222,4 @@ You can wake a Service up using a WebSocket connection, but that connection may 
 2年くらい前にDiscordBotを作ったことがあるものの、記憶がなくなっていました...記憶力が悪いとめんどくさいですが、毎回新鮮な気持ちで取り組めるのでいいですね（？）
 
 
-＊参考：https://zenn.dev/maguro_alterna/articles/65906deef48e2b
+＊参考：{{< linkcard "https://zenn.dev/rikei_ocojo/articles/hugo-typescript-tailwind" >}}
