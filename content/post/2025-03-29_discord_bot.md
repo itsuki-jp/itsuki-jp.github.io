@@ -162,6 +162,8 @@ Koyebで完結させるのであれば不要ですが、ローカルでテスト
 
 `docker-compose up -d`で起動, `docker-compose down`で落とせるので便利ですね
 
+備考：`docker-compose down && docker-compose up -d --build && docker-compose logs -f` で落として、ビルドして、ログを見れるので便利ですね
+
 <details>
 <summary>docker-compose.yml</summary>
 
