@@ -1,14 +1,16 @@
 ---
-title: "amazon Q を使ってゲームを作りたい"
+title: "Amazon Q を使ってゲームを作りたい"
 date: 2025-06-08T16:41:13+09:00
 draft: false
 summary: "Tシャツ欲しい"
 ---
 # はじめに
-8月3日（火）の AWS JumpStart Next #1 に参加してきました。去年の8月あたりに新人研修もかねてJumpStartに参加していたご縁的なやつです。
-（GeminiのハンズオンでGoogleのオフィスに行けて、今回でAWSに行けたので残すはMetaだけですね？）
+8月3日（火）の AWS JumpStart Next #1 に参加してきました。去年の8月あたりに新人研修もかねて JumpStart に参加していたご縁的なやつです。
+（Gemini のハンズオンで Google のオフィスに行けて、今回で AWS に行けたので残すは Meta だけですね？）
 
 このイベントで本来はAmazon Q CLI というAIコーディングエージェントを用いたハンズオンができるはずでしたが、いろいろあってできなくなってしまい...。ただ、そこで"Amazon Q CLI でゲームを作ろう Tシャツキャンペーン"というのがあることを知り、せっかくなので作ってみました！！！
+
+![alt text](/images/2025-06-08_make-game-using-amazonQ/image-3.png)
 
 
 # Amazon Q CLI でゲームを作ろう Tシャツキャンペーン
@@ -71,10 +73,10 @@ summary: "Tシャツ欲しい"
 
 ![alt text](/images/2025-06-08_make-game-using-amazonQ/image-1.png)
 
-## amazon q cli を使ってみて
+## Amazon Q CLI を使ってみて
 35回の会話?35個のプロンプト?で完成しました。(もうちょっと早く終わると思った...)
 
-デフォルトだとsonnet 3.7 を使うらしい？そこらへんがわかりませんでしたが、まあまあいい感じに動いてくれました
+デフォルトだと Sonnet 3.7 を使うらしい？そこらへんがわかりませんでしたが、まあまあいい感じに動いてくれました
 
 最初の画面、かっこいい
 
@@ -96,19 +98,19 @@ summary: "Tシャツ欲しい"
 
 あと、最初のほうは自分で `git add . && git commit -m "num"` を実行してましたが、`（これから最終的な作業が終わるごとにgit add .とgit commit -m "num" (今回のnumは11、次は12のようにインクリメントされます)してください` , `(コミットメッセージは"num: やったこと"の形式で書いてください)` のように書いたら勝手にやってくれたのでめちゃ楽になった。issue作ってくれたり、PR作ってくれたりするようにもできただろうが、まあいいかになってしまった。
 
-# 裏企画？sonnet 4で同じゲームを作ってもらおう
-sonnet 4 で最初のプロンプトを投げて作ってもらいました。
+# 裏企画？Sonnet 4 で同じゲームを作ってもらおう
+Sonnet 4 で最初のプロンプトを投げて作ってもらいました。
 
 19回のやり取りで、よりいい感じに作ってくれましたね...(個人的にはこっちのゲームのほうが好きです)
 
-([ただ、Amazon Q CLI でもsonnet4 を使えるようになったらしい](https://dev.classmethod.jp/articles/amazon-q-developer-cli-claude-sonnet-4/)ので、あまり意味はないかも？)
+([ただ、Amazon Q CLI でも Sonnet 4 を使えるようになったらしい](https://dev.classmethod.jp/articles/amazon-q-developer-cli-claude-sonnet-4/)ので、あまり意味はないかも？)
 (`/model`でモデルを選択するらしいが、エラーが出てしまいました...)
 
 [プレイリンク](https://itsuki-jp.github.io/test_sonnet4/claude_desktop/)
 
 ![alt text](/images/2025-06-08_make-game-using-amazonQ/image-2.png)
 
-GitHub MCPに脆弱性があった～みたいな話もあり、使っていないのでgit 管理がめんどくさかったですね
+GitHub MCP に脆弱性があった～みたいな話もあり、使っていないので git 管理がめんどくさかったですね
 
 <details>
 <summary>readme.md</summary>
@@ -178,6 +180,6 @@ GitHub MCPに脆弱性があった～みたいな話もあり、使っていな�
 </details>
 
 # さいごに
-amazon q cliを使ってゲームを作ってみて、正直CLIの良さがわからず...になってました。が、よくよく調べてみるとgit worktree なるものを使うとそれぞれのCLIでブランチを切って並列開発が出来るそうですね。今回は「一つのゲームを作る」という目的なので並列開発しづらいですが、複数作りたい機能があってそれが独立していればclaude desktopやgithub copilot などを使うよりも断然早く開発が出来そう！
+Amazon Q CLI を使ってゲームを作ってみて、正直 CLI の良さがわからず...になってました。が、よくよく調べてみると git worktree なるものを使うとそれぞれの CLI でブランチを切って並列開発が出来るそうですね。今回は「一つのゲームを作る」という目的なので並列開発しづらいですが、複数作りたい機能があってそれが独立していれば Claude Desktop や GitHub Copilot などを使うよりも断然早く開発が出来そう！
 
 今度はもうちょっと大きな、並列で開発できるものを作ってみたいですね！！！
