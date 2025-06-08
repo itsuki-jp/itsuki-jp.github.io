@@ -1,5 +1,5 @@
 ---
-title: "Amazon Q を使ってゲームを作りたい"
+title: "Amazon Q CLIを使ってゲームを作りたい"
 date: 2025-06-08T16:41:13+09:00
 draft: false
 summary: "Tシャツ欲しい"
